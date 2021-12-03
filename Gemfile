@@ -13,3 +13,5 @@ gem "rspec", "~> 3.10"
 gem "webrick", "~> 1.7"
 
 gem "capybara", "~> 3.36"
+
+gem "sinatra-contrib", "~> 2.1"

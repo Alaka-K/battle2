@@ -7,7 +7,14 @@ class Battle < Sinatra::Base
   end
 
   get '/' do
-    "Hello Battle!"
+  erb :index
+  end
+
+  post '/names' do
+    p params
+    @Player_1 = params[:Player_1]
+    @Player_2 = params[:Player_2]
+    erb :play
   end
   
   run! if app_file == $0
