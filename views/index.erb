@@ -1,5 +1,12 @@
+   <h1>Game on!</h1>
+   <h2>Enter your names to play</h2>
     <form action='/names' method='post'> <%#when we click submit we need that info to point to a specific route. we will use POST as we are requesting that a web server accept the data%>
-      <input type='text' name='Player_1'>
-      <input type='text' name='Player_2'>
+      <label for='Player_1'>
+        Player 1 name
+        <input type='text' name='Player_1'>
+      </label>
+      <label for='Player_2'>
+        Player 2 name
+        <input type='text' name='Player_2'>
       <input type='submit' value='Submit'>
     </form>
